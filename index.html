@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang>
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Link for Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.2.0/css/line.min.css"
+    />
+    <!-- JavaScript Link -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+   <!-- EmailJS -->
+   <script type="text/javascript"
+   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+ emailjs.init({
+   publicKey: "YVNVKMq--EhzxVcJnc",
+ });
+})();
+</script>
+  </head>
+  <body>
+    <!-- Nav Menu -->
+    <div class="container">
+      <nav id="header">
+        <div class="nav-logo">
+          <p class="nave-name" style="color: grey; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 900; font-style: oblique; font-weight: 50px;"  >Portfolio</p>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="#Home" class="nav-link active-link">Home</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#about" class="nav-link">About</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#projects" class="nav-link">Projects</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#Contact" class="nav-link">Contact</a>
+              <div class="circle"></div>
+            </li>
+          </ul>
+        </div>
+        <!-- Dark Mode -->
+        <div class="mode">
+          <!-- <div class="moon-sun" id="toggle-Switch">
+            <i class="fa fa-moon" id="moon"></i>
+            <i class="fa fa-sun" id="sun"></i> -->
+            <div class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</div>
+          </div>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+      <!-- main -->
+      <main class="wrapper">
+      <!-- Featured Box -->
+        <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+              <span>WAQAR AHMED.</span>
+          </div>
+            <div class="hello">
+              <p>Asslam - O - Alaikum , I'm a</p>
+            </div>
+            <div class="typing-container" id="typingEffect"></div>
+            <div class="featured-name">
+              <span class="typedText"></span>
+            </div>
+            <div class="text-info">
+              <p>
+                I'm <strong> Waqar Ahmed Bhutto </strong> , a passionate web developer dedicated to creating functional and aesthetically pleasing websites. Whether it's building from the ground up or optimizing existing projects, I specialize in front-end and back-end development, focusing on seamless user experiences and clean code.
+              </p>
+            </div>
+            <div class="text-btn">
+              <button class="btn" >Hire Me</button>
+              <button class="btn">
+              Download Cv<i class="uil uil-file"></i>
+              </button>
+            </div>
+            <div class="social_icons">
+              <div class="icon_circle"></div>
+              <div class="icon"><i class="uil uil-instagram"></i></div>
+              <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+              <div class="icon"><i class="uil uil-behance-alt"></i></div>
+              <div class="icon"><i class="uil uil-github-alt"></i></div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="images/image_2.jpg" alt="">
+            </div>
+          </div>
+        </section>
+        <!--about box -->
+        <section class="section" id="about" style="margin-top: 180px; ">
+            <div class="top-header">
+                <h1>About Me</h1>
+            </div>
+           <div style="display: flex;">
+            <div class="row">
+              <div class="col">
+                  <div class="about-info"  >
+                      <figure class="about-me" style="display: flex; width: 500px; height: 180px;">
+                              <img src="images/image_1.jpg" alt="" class="profile" style="display: inline-block; border-radius: 70%;"  />
+                             <div style="justify-content: center; border-radius: 70%;">
+                              <h2>Web developer</h2>
+                              <p>I'm <strong> Waqar Ahmed Bhutto </strong> , a passionate web developer dedicated to creating functional and aesthetically pleasing websites. Whether it's building from the ground up or optimizing existing projects, I specialize in front-end and back-end development, focusing on seamless user experiences and clean code.</p>
+                      </figure>
+                      <a href="#Contact"  class="about-me-btn" style="margin-top: 70px;" >Hire Me</a>
+                             </div>
+                  </div>
+              </div>
+              <div class="skill">
+              <div class="skill-box">
+                  <span class="title">HTML</span>
+                  <div class="skill-bar">
+                      <span class="skill-per html">
+                          <span class="tooltip">80%</span>
+                      </span>
+                  </div>
+                  <div class="skill-box">
+                      <span class="title">CSS</span>
+                      <div class="skill-bar">
+                          <span class="skill-per css">
+                              <span class="tooltip" >80%</span>
+                          </span>
+                      </div>
+                      <div class="skill-box">
+                          <span class="title">JavaScript</span>
+                          <div class="skill-bar">
+                              <span class="skill-per javascript">
+                                  <span class="tooltip" >70%</span>
+                              </span>
+                          </div>
+                          <div class="skill-box">
+                              <span class="title">Python</span>
+                              <div class="skill-bar">
+                                  <span class="skill-per python">
+                                      <span class="tooltip">10%</span>
+                                  </span>
+                              </div>
+               </div>
+              </div>
+              <div class="skill-box">
+                  <span class="title">PHP</span>
+                  <div class="skill-bar">
+                      <span class="skill-per php">
+                          <span class="tooltip">0%</span>
+                      </span>
+                  </div>
+          </div></div>
+           </div></div></div>
+        </section>
+        <!-- Project Box -->
+         <section class="section" id="projects" style="margin-top: 50px; margin-bottom: 50px;">
+            <div class="top-header">
+                <h1>Projects</h1>
+            </div>
+            <div class="project-container">
+                <div class="project-box">
+                    <i class="l-briefcase-alt"></i>
+                    <h3>Completed</h3>
+                    <label>1+ Finished Projects</label>
+                </div>
+                <div class="project-box">
+                    <i class="l-users-alt"></i>
+                    <h3>Clients</h3>
+                    <label>10+ happy Clients</label>
+                </div>
+                <div class="project-box">
+                    <i class="uil uil-award"></i>
+                    <h3>Experience</h3>
+                    <label>1+ Month in Web Development</label>
+                </div>
+            </div>
+         </section>
+         <!-- Section Box -->
+          <section class="section" id="Contact">
+            <div class="top-header">
+              <h1>Let's Work to Together</h1>
+              <span>Do you have a project in your mind, contact me here  </span>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="contact-info">
+                  <h2>Find me <i class="uil uil-corner-right-down"></i></h2>
+                  <p><i class="uil uil-envelope">Email:bhuttowaqarahmed948@gmail.com</i></p>
+                  <p><i class="uil uil-phone">Phone:03003565915</i></p>
+                  <p><i class="fa-brands fa-whatsapp">Whatsapp:03129371785</i></p>
+
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-control" id="contactForm" >
+                  <div class="form-inputs">
+                    <input type="text" class="input-field" id="name" placeholder="Your Name">
+                    <input type="text" class="input-field" id="email" placeholder="Your Email">
+                  </div>
+                  <div class="text-area">
+                    <input type="text" class="input-subject" id="message" placeholder="Subject">
+                    <textarea placeholder="Message"></textarea>
+                  </div>
+                  <div class="form-button">
+                    <button class="btn"  type="submit" >Send<i class="uil uil-message"></i></button>
+                  </div>
+                </div>
+                <p id="formResponse" ></p>
+              </div>
+            </div>
+          </section>
+      </main>
+      <!-- Footer -->
+       <footer>
+        <div class="middle-footer">
+          <ul class="footer-menu">
+            <li class="footer-menu-list">
+              <a href="#Home">Home</a>
+            <li class="footer-menu-list">
+                <a href="#About">About</a>
+            <li class="footer-menu-list">
+                  <a href="#Projects">Projects</a>
+            <li class="footer-menu-list">
+                    <a href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social-icons">
+          <div class="icon"><i class="uil uil-instagram"></i></div>
+          <div class="icon"><i class="fa-brands fa-linkedin-in icon"></i></div>
+          <div class="icon"><i class="uil uil-behance-alt"></i></div>
+          <div class="icon"><i class="uil uil-github-alt"></i></div>
+        </div>
+        <div class="bottom-footer">
+          <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Waqar Web Development</a> - All rights reserved 2025</p>
+        </div>
+       </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+    <script src="index.js"></script>
+    <scrip src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/2.0.0/scrollReveal.js"></scrip>
+    <script src="email.js"></script>
+  </body>
+</html>
